@@ -1,19 +1,57 @@
-body {
+body,
+h1,
+ul,
+li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.title {
+  border: dotted 2px red;
+  text-align: center;
+}
+
+.board {
+  border: dotted 2px red;
+  width: 282px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .board-wrap {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  width: 156px;
+  width: 168px;
 }
 
 .cell {
-  background-color: aquamarine;
-  width: 48px;
+  width: 52px;
   height: 52px;
-  border: solid 2px;
+}
+
+.one,
+.four {
+  border-right: solid 2px;
+  border-bottom: solid 2px;
+}
+
+.two,
+.five {
+  border-right: solid 2px;
+  border-bottom: solid 2px;
+}
+
+.three,
+.six {
+  border-bottom: solid 2px;
+}
+
+.seven {
+  border-right: solid 2px;
+}
+
+.eight {
+  border-right: solid 2px;
 }

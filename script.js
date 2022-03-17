@@ -1,3 +1,15 @@
+const board = (() => {
+  function recordPlayer() {
+    
+
+    return {
+
+    }
+  }
+})();
+
+
+
 const cells = document.querySelectorAll('.cell');
 
 let playerOne = true;
@@ -14,7 +26,6 @@ const winningStreaks = [
   [1,5,9],
   [7,5,3]
 ];
-
 
 function handlePlay(event) {
   if(this.innerHTML === '') {
@@ -62,8 +73,3 @@ cells.forEach(cell => {
 })
 
 
-let randArr = [1, 4, 7];
-
-console.log(randArr.includes(1));
-console.log(randArr.includes(4));
-console.log(randArr.includes(7));
